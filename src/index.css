@@ -1,0 +1,18 @@
+@import "tailwindcss";
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%) }
+  to { transform: translateX(0) }
+}
+
+.animate-slide {
+  animation: slideIn 0.35s ease-out;
+}
